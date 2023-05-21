@@ -1,4 +1,4 @@
-# Signups Support
+# Support
 
 If you require support or have questions about using Signups, please
 * [Send me a message in the Salesforce Partner Community](https://partners.salesforce.com/_ui/core/userprofile/UserProfilePage?u=00530000009abT7&tab=sfdc.ProfilePlatformFeed)
