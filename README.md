@@ -17,13 +17,11 @@ Signups (the "app") was developed by Michael Epstein (the "developer") and is of
 
 The developer respects your privacy and the security of your data. The app collects only the information that is required to enable your use of the app. 
 
-The app securely stores tokens in your device's keychain, but not your Salesforce username or password. Storing the tokens enables you to use the app without having to log in each time. (For more information on these tokens and the user authentication process, see [OAuth 2.0 User-Agent Flow for Desktop or Mobile App Integration](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_user_agent_flow.htm&type=5)).
+The app securely stores Salesforce session and refresh tokens in your device's iOS keychain, but does not store your Salesforce username or password. Storing the tokens enables you to use the app without having to log in again with each use. For more information on these tokens and the user authentication process, see [OAuth 2.0 User-Agent Flow for Desktop or Mobile App Integration](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_user_agent_flow.htm&type=5). When login is required, the app displays a web form which prompts you for your Salesforce username and password. The web form is hosted by Salesforce and the app never handles your Salesforce password.
 
-When login is required, the app displays a web form which prompts you for your Salesforce username and password. The web form is hosted by Salesforce and the app never handles your Salesforce password.
+The app collects PII about users for whom you want to provision a new Salesforce environment ("org"), but that information is not stored on the device and is transmitted only to Salesforce, over a secure Internet connection to Salesforce's [Signup Request API](https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/trialforce_enable_signuprequest_api.htm) endpoint.
 
-The app does not store any other sensitive or personally identifiable information (PII). The app does collect PII about users for whom you want to provision a new Salesforce environment ("org"), but that information is not stored on the device and is transmitted only to Salesforce, over a secure Internet connection to Salesforce's [Signup Request API](https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/trialforce_enable_signuprequest_api.htm) endpoint.
-
-The app downloads PII about users for whom orgs were provisioned in the past, using a secure connection to Salesforce's Signup Request API endpoint. The PII is only held in memory on your device, and is not stored. The PII is deleted when you quit the app.
+The app downloads PII about users for whom orgs were provisioned in the past, using a secure connection to Salesforce's Signup Request API endpoint. The PII is only held in memory on your device, but is not persisted; the PII is deleted when you quit the app.
 
 The app stores on your device any notes or labels that you create and relate to a particular signup request, Trialforce template or connected app.
 
