@@ -23,11 +23,11 @@ The app collects PII about users for whom you want to provision a new Salesforce
 
 The app downloads PII about users for whom orgs were provisioned in the past, using a secure connection to Salesforce's Signup Request API endpoint. The PII is only held in memory on your device, but is not persisted; the PII is deleted when you quit the app.
 
-The app stores on your device any notes or labels that you create and relate to a particular signup request, Trialforce template or connected app.
+The app stores on your device any notes or labels that you create and associate with a particular signup request, Trialforce template or connected app.
 
 ## What Information is Accessible to the Developer?
 
-The developer cannot access any of the information that the app downloads or stores on your device, and the app does not transmit any data to the developer. The app only communicates with Salesforce, over a secure Internet connection to endpoints that are managed by Salesforce.
+The developer cannot access any of the information that the app downloads or stores on your device, and the app does not transmit any data to the developer. The app communicates only with Salesforce, over a secure Internet connection to endpoints that are managed by Salesforce.
 
 ## How Can I Delete Stored Information?
 
