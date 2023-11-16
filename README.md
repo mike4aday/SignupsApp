@@ -8,7 +8,7 @@ If you require support or have questions about using Signups, please
 
 # Privacy Policy
 
-Revised 05/17/2023
+Revised 11/15/2023
 
 ## About the App
 Signups (the "app") was developed by Michael Epstein (the "developer") and is offered free of charge and without warranty.
